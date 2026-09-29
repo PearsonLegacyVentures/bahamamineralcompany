@@ -167,3 +167,131 @@ h1,h2,h3{letter-spacing:-.057em}
  .footer-links{grid-template-columns:1fr;gap:2rem}
 }
 @media(prefers-reduced-motion:reduce){.ocean-hero .home-hero__visual img{animation:none}}
+/* Interactive shell-use explorer */
+.possibility-explorer{margin-top:2.6rem}
+.possibility-stage{position:relative;background:linear-gradient(135deg,#f7e8d7,#fff9ec 57%,#d2f3ed);border-radius:2rem;overflow:hidden;box-shadow:0 25px 55px rgba(3,83,101,.12)}
+.possibility-panel{display:grid;grid-template-columns:1.2fr .8fr;min-height:35rem;align-items:center;gap:2rem}
+.possibility-panel[hidden],.award-roadmap__panels figure[hidden]{display:none!important}
+.possibility-art{height:100%;min-height:31rem;position:relative;display:grid;place-items:center;isolation:isolate}
+.possibility-art:before{content:"";position:absolute;width:min(65%,24rem);aspect-ratio:1;border:1px solid rgba(9,94,113,.16);border-radius:50%;box-shadow:0 0 0 2.3rem rgba(255,255,255,.25),0 0 0 4.7rem rgba(255,255,255,.13);z-index:-1}
+.possibility-art--1{background:radial-gradient(circle at 42% 55%,#fbd9cc,transparent 64%)}
+.possibility-art--2{background:radial-gradient(circle at 42% 55%,#d5f2f1,transparent 64%)}
+.possibility-art--3{background:radial-gradient(circle at 42% 55%,#fff0c5,transparent 64%)}
+.possibility-art--more{background:radial-gradient(circle at 42% 55%,#bce8e0,transparent 65%)}
+.possibility-art img{max-width:94%;width:auto;max-height:29rem;object-fit:contain;filter:drop-shadow(0 22px 22px rgba(13,85,89,.2));animation:material-hover 7s ease-in-out infinite alternate}
+@keyframes material-hover{to{transform:translateY(-12px) rotate(1.3deg)}}
+.possibility-copy{padding:3rem 4.5rem 5rem 0;max-width:33rem;position:relative;z-index:1}
+.possibility-index{font-size:.76rem;letter-spacing:.15em;font-weight:800;color:#14778a}
+.possibility-copy h3{font-size:clamp(3.1rem,5.2vw,6.4rem);line-height:.97;letter-spacing:-.065em;margin:1.7rem 0}
+.possibility-copy p{font-size:1.12rem;color:#426674;max-width:28rem;line-height:1.6;margin-bottom:2rem}
+.possibility-controls{position:absolute;right:2.5rem;bottom:1.4rem;display:flex;align-items:center;gap:.8rem;z-index:3}
+.possibility-controls button{width:2.6rem;height:2.6rem;border:1px solid #80afb2;border-radius:50%;background:#fffefa;color:#07576b;font-size:1.3rem;cursor:pointer}
+.possibility-controls button:hover,.possibility-controls button:focus-visible{background:#07576b;color:#fff}
+.possibility-progress{font-size:.76rem;min-width:4rem;text-align:center;letter-spacing:.12em;font-weight:800;color:#346b79}
+.possibility-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:.55rem;margin-top:1rem}
+.possibility-tab{display:flex;align-items:center;gap:1rem;text-align:left;border:1px solid #bcded9;background:#fffefa;color:#1d5b6b;padding:1rem 1.1rem;border-radius:.85rem;font:700 .93rem var(--display);cursor:pointer;transition:background .2s,transform .2s,border-color .2s}
+.possibility-tab span{font-size:.76rem;color:#1697a2;letter-spacing:.12em}
+.possibility-tab[aria-selected=true]{background:#0a667d;color:#fff;border-color:#0a667d;transform:translateY(-2px)}
+.possibility-tab[aria-selected=true] span{color:#ffdfa6}
+.possibility-tab:hover:not([aria-selected=true]){background:#e3f5ef}
+/* The award road map uses the founders' original event photos. */
+.story-preview__heading{display:grid;grid-template-columns:1fr 1fr;gap:7vw;align-items:end;margin-bottom:3rem}
+.story-preview__heading h2{margin:0}
+.story-preview__heading p:not(.eyebrow){color:#d9edef;font-size:1.08rem;line-height:1.65;max-width:36rem}
+.story-preview__heading p+p{margin-top:1rem}
+.award-roadmap{display:grid;grid-template-columns:.66fr 1fr;gap:1.4rem;align-items:stretch}
+.award-roadmap__steps{display:grid;align-content:center;gap:.75rem;position:relative}
+.award-roadmap__steps:before{content:"";position:absolute;left:1.7rem;top:2rem;bottom:2rem;width:1px;background:rgba(255,255,255,.35)}
+.award-roadmap__steps button{position:relative;text-align:left;display:grid;grid-template-columns:2.4rem 1fr;column-gap:1rem;align-content:center;min-height:9rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.2);border-radius:1.2rem;padding:1.35rem;color:#eaf7f5;cursor:pointer}
+.award-roadmap__steps button[aria-selected=true]{background:#0c8195;border-color:#7ad6d1;box-shadow:0 14px 30px rgba(1,38,59,.18)}
+.award-roadmap__steps button>span{grid-row:span 2;background:#fff3ce;color:#07546a;border-radius:50%;width:2.3rem;height:2.3rem;display:grid;place-items:center;font-size:.76rem;font-weight:800;z-index:1}
+.award-roadmap__steps strong{font-family:var(--display);font-size:1.08rem;line-height:1.25}
+.award-roadmap__steps small{font-size:.83rem;margin-top:.55rem;color:#d2ece9}
+.award-roadmap__panels figure{margin:0;position:relative;height:34rem;border-radius:1.3rem;overflow:hidden;background:#072e43;box-shadow:0 20px 45px rgba(0,29,47,.23)}
+.award-roadmap__panels img{width:100%;height:100%;object-fit:contain}
+.award-roadmap__panels figcaption{position:absolute;bottom:0;left:0;right:0;padding:1.5rem;background:linear-gradient(transparent,rgba(2,34,53,.92));color:#fff;font-size:.76rem;font-weight:800;letter-spacing:.09em;text-transform:uppercase}
+/* Poultry supply story */
+.egg-context{background:#fffefa}
+.egg-context__grid{display:grid;grid-template-columns:repeat(3,1fr);gap:.8rem}
+.egg-context__grid>div{border:1px solid #c5e4df;border-radius:1.2rem;padding:2rem;background:#eef9f4}
+.egg-context__grid span{font-size:.76rem;letter-spacing:.13em;color:#0b8394;font-weight:800}
+.egg-context__grid h3{font-size:1.75rem;margin:1.2rem 0 .8rem}
+.egg-context__grid p{color:#4b6f77;line-height:1.6;margin:0}
+.egg-context__sources{font-size:.76rem;color:#64838a;margin:1.3rem 0 0}
+.egg-context__sources a{text-decoration:underline;text-underline-offset:.2em}
+.hen-story{position:relative;height:clamp(26rem,45vw,41rem);overflow:hidden}
+.hen-story>img{height:100%;width:100%;object-fit:cover;object-position:center 55%}
+.hen-story:after{content:"";position:absolute;inset:48% 0 0;background:linear-gradient(transparent,rgba(2,43,54,.7))}
+.hen-story__caption{position:absolute;z-index:1;left:max(2rem,calc((100vw - 1320px)/2));bottom:2rem;color:#fff;max-width:30rem}
+.hen-story__caption span{color:#ffe5a1;letter-spacing:.15em;font-size:.75rem;font-weight:800}
+.hen-story__caption p{font-family:var(--display);font-size:clamp(1.7rem,3vw,3rem);font-weight:700;line-height:1.17;margin:.6rem 0 0}
+.format-layout{align-items:center}
+.format-display{border-radius:1.4rem;overflow:hidden;box-shadow:0 18px 35px rgba(9,85,101,.11);background:#add9d8}
+.format-display img{display:block;width:100%;height:auto}
+.format-section .format-grid{margin-top:1rem;gap:1rem}
+.audience-layout>div:first-child>p:not(.eyebrow){max-width:26rem;color:#557885;margin-bottom:1.5rem}
+.audience-whatsapp{display:inline-flex}
+/* New application routes and updated architecture photograph */
+#architecture .application-row__visual{background:#e9ded5}
+#architecture .application-row__visual img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;filter:none}
+.further-applications{background:linear-gradient(150deg,#e7f8f3,#fff9ef)}
+.further-applications .section-heading>p{color:#4e7882}
+.extra-applications-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.extra-application{scroll-margin-top:6rem;background:#fffefa;border:1px solid #cce7e1;border-radius:1.4rem;overflow:hidden;box-shadow:0 14px 30px rgba(8,90,106,.06);transition:transform .25s,box-shadow .25s}
+.extra-application:hover{transform:translateY(-5px);box-shadow:0 22px 37px rgba(8,90,106,.12)}
+.extra-application__image{height:16rem;display:grid;place-items:center;background:radial-gradient(circle at 50% 60%,#ffecd5,#d7f2ec 75%);overflow:hidden}
+.extra-application:nth-child(3n+2) .extra-application__image{background:radial-gradient(circle at 50% 60%,#e4f9f4,#caecf1 75%)}
+.extra-application__image img{height:100%;width:95%;object-fit:contain;filter:drop-shadow(0 13px 11px rgba(8,71,86,.15));transition:transform .3s}
+.extra-application:hover img{transform:scale(1.06)}
+.extra-application__copy{padding:1.7rem 1.6rem 2rem}
+.extra-application__copy>span{font-size:.74rem;color:#0c8996;font-weight:800;letter-spacing:.13em}
+.extra-application h3{font-size:clamp(1.7rem,2.3vw,2.5rem);margin:.75rem 0}
+.extra-application p{min-height:5.5rem;color:#527781;font-size:.95rem;line-height:1.55}
+.extra-application .text-link{font-size:.85rem}
+/* Real founder portraits */
+.founder-card{overflow:hidden;padding:0;min-height:35rem}
+.founder-card__portrait{position:relative;height:23rem;display:flex;align-items:end;justify-content:center;background:radial-gradient(circle at 50% 45%,#b6ebe5,#d5f4e8 65%,#f9f7e9)}
+.founder-card__portrait--amar{background:radial-gradient(circle at 50% 45%,#c8e6ed,#e0f3f2 62%,#fcf2df)}
+.founder-card__portrait img{height:100%;max-width:100%;object-fit:contain;object-position:bottom}
+.founder-card__portrait span{position:absolute;top:1rem;right:1rem;font-weight:800;font-size:.75rem;letter-spacing:.1em;color:#0b6b7b}
+.founder-card>div:last-child{padding:1.6rem 2rem 2rem}
+.founder-card h3{margin:.4rem 0}
+@media(max-width:1000px){
+ .possibility-panel{grid-template-columns:1fr 1fr}
+ .possibility-copy{padding:2rem 2rem 5rem 0}
+ .extra-applications-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:760px){
+ .possibility-panel{display:block;min-height:0;padding-bottom:4rem}
+ .possibility-art{min-height:20rem;height:21rem}
+ .possibility-art img{max-height:19rem}
+ .possibility-copy{padding:0 1.5rem 2rem}
+ .possibility-copy h3{font-size:clamp(2.8rem,9vw,4.5rem);margin:1rem 0}
+ .possibility-copy p{font-size:1rem}
+ .possibility-controls{right:1.3rem;bottom:1rem}
+ .possibility-tabs{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 0 .5rem}
+ .possibility-tab{flex:0 0 10rem;scroll-snap-align:start}
+ .story-preview__heading,.award-roadmap{grid-template-columns:1fr}
+ .award-roadmap__steps{grid-template-columns:1fr 1fr}
+ .award-roadmap__steps:before{display:none}
+ .award-roadmap__steps button{min-height:9rem;grid-template-columns:1fr;gap:.4rem}
+ .award-roadmap__steps button>span{grid-row:auto}
+ .award-roadmap__panels figure{height:26rem}
+ .egg-context__grid{grid-template-columns:1fr}
+ .hen-story{height:26rem}
+ .extra-applications-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:560px){
+ .possibility-stage{border-radius:1.2rem}
+ .story-preview__heading h2{font-size:clamp(2.8rem,10vw,4rem)}
+ .award-roadmap__steps{gap:.45rem}
+ .award-roadmap__steps button{padding:.8rem;min-height:10rem}
+ .award-roadmap__steps strong{font-size:.9rem}
+ .award-roadmap__steps small{font-size:.72rem}
+ .award-roadmap__panels figure{height:22rem}
+ .extra-applications-grid{grid-template-columns:1fr}
+ .extra-application p{min-height:0}
+ .founder-grid{grid-template-columns:1fr}
+ .hen-story__caption{left:1.125rem;right:1.125rem;bottom:1.2rem}
+}
+@media(prefers-reduced-motion:reduce){.possibility-art img{animation:none}.extra-application,.extra-application img,.possibility-tab{transition:none}}
