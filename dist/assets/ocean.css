@@ -229,11 +229,12 @@ h1,h2,h3{letter-spacing:-.057em}
 .format-display{border-radius:1.4rem;overflow:hidden;box-shadow:0 18px 35px rgba(9,85,101,.11);background:#add9d8}
 .format-display img{display:block;width:100%;height:auto}
 .format-section .format-grid{margin-top:1rem;gap:1rem}
+.format-section .format-grid>div{min-height:8.5rem}
 .audience-layout>div:first-child>p:not(.eyebrow){max-width:26rem;color:#557885;margin-bottom:1.5rem}
 .audience-whatsapp{display:inline-flex}
 /* New application routes and updated architecture photograph */
-#architecture .application-row__visual{background:#e9ded5}
-#architecture .application-row__visual img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:contain;filter:none}
+#architecture .application-row__visual{min-height:16rem;aspect-ratio:3/2;background:#181716}
+#architecture .application-row__visual img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;filter:none}
 .further-applications{background:linear-gradient(150deg,#e7f8f3,#fff9ef)}
 .further-applications .section-heading>p{color:#4e7882}
 .extra-applications-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
@@ -279,6 +280,7 @@ h1,h2,h3{letter-spacing:-.057em}
  .award-roadmap__panels figure{height:26rem}
  .egg-context__grid{grid-template-columns:1fr}
  .hen-story{height:26rem}
+ .format-section .format-grid>div{min-height:7rem}
  .extra-applications-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:560px){
