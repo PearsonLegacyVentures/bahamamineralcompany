@@ -131,6 +131,7 @@ h1,h2,h3{letter-spacing:-.057em}
 .site-footer{background:linear-gradient(110deg,rgba(2,35,53,.96),rgba(3,60,75,.9)),url('/assets/shoreline-hero.webp') center 55%/cover no-repeat;color:#fff}
 .footer-logo{display:grid;place-items:center;width:12rem;height:8.5rem;background:rgba(255,254,247,.95);border-radius:1rem;margin-bottom:2.3rem;box-shadow:0 16px 35px rgba(0,25,40,.16)}
 .footer-logo img{width:10.8rem;height:7.2rem;object-fit:contain}
+.footer-links{grid-template-columns:minmax(7.5rem,.6fr) minmax(16rem,1.4fr);gap:1.2rem}
 .footer-links a{overflow-wrap:anywhere}
 .footer-links h3{color:#ffe6aa}.footer-links a,.footer-links span{color:#c5e4e3}.footer-bottom{border-color:#5c9ba8;color:#b7d5d4}.footer-bottom a{color:#fff0bc}
 @media(max-width:1120px){
@@ -147,6 +148,7 @@ h1,h2,h3{letter-spacing:-.057em}
  .application-row__grid{grid-template-columns:.6fr 1fr}.application-row__visual{grid-column:2;min-height:18rem}.application-row__foot{grid-column:2}
  .process-hero__grid{grid-template-columns:1fr 1fr;gap:2rem}.process-hero__visual{height:27rem}
 }
+@media(max-width:900px){.footer-top{grid-template-columns:1fr;gap:3rem}.footer-links{max-width:37rem}}
 @media(max-width:760px){
  .pathway-grid{grid-template-columns:1fr}.pathway-card,.pathway-card--feature{min-height:37rem;padding:1.4rem}.pathway-card__visual{height:20rem}.pathway-card h3{font-size:2.5rem}.pathway-card p{min-height:0}
  .product-hero .page-hero__grid{grid-template-columns:1fr}.product-hero__visual{min-height:27rem;margin:0}.product-hero__stamp{right:0;bottom:0}.product-hero .page-hero__grid>div:first-child{padding-bottom:0}
@@ -162,5 +164,6 @@ h1,h2,h3{letter-spacing:-.057em}
  .process-hero__visual{height:20rem}.process-hero h1{font-size:clamp(3.2rem,10.8vw,5rem)}
  .progress-media{min-height:20rem}.progress-media__note{left:1.2rem;right:1.2rem;bottom:1.2rem}.progress-media__note p{font-size:1.3rem}
  .about-hero:before{width:86%;right:-46%;top:9%;opacity:.16}.contact-form-wrap{border-radius:0}
+ .footer-links{grid-template-columns:1fr;gap:2rem}
 }
 @media(prefers-reduced-motion:reduce){.ocean-hero .home-hero__visual img{animation:none}}
