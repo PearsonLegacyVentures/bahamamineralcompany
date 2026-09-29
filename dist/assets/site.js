@@ -18,7 +18,7 @@
       var value=function(name){return String(data.get(name)||'').trim()};
       var subject='BMC inquiry: '+value('interest');
       var body='Name: '+value('name')+'\nEmail: '+value('email')+'\nOrganization: '+value('organization')+'\nIsland / location: '+value('location')+'\nTopic: '+value('interest')+'\n\nInquiry:\n'+value('message');
-      location.href='mailto:info@soilgold.bs?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+      location.href='mailto:amar@bahamamineralcompany.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
     });
   }
 })();

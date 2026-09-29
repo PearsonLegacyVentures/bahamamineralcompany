@@ -22,28 +22,20 @@ h1,h2,h3{letter-spacing:-.057em}
 .primary-nav a[aria-current=page]:not(.nav-contact):after{background:#0bb6be}
 .primary-nav .nav-contact{border:0;border-radius:999px;background:#0b7990;color:#fff;padding:.9rem 1.3rem;box-shadow:0 8px 20px rgba(4,85,108,.12)}
 .primary-nav .nav-contact:hover,.primary-nav .nav-contact[aria-current=page]{background:#064e68;color:white}
-/* A shell suspended in ocean light */
-.ocean-hero{position:relative;isolation:isolate;background:
-  radial-gradient(circle at 74% 32%,rgba(211,252,247,.56),transparent 32%),
-  radial-gradient(circle at 28% 96%,rgba(0,67,114,.55),transparent 45%),
-  linear-gradient(119deg,#006783 0%,#008baa 35%,#1fbcc6 70%,#85e4da 100%);
-  min-height:clamp(42rem,calc(100svh - 8.2rem),56rem);overflow:hidden;color:#fff}
-.ocean-hero:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(155deg,transparent 0 128px,rgba(255,255,255,.07) 129px,transparent 131px);mask-image:linear-gradient(90deg,transparent 35%,#000);pointer-events:none}
+/* Bahamian shoreline behind the floating shell */
+.ocean-hero{position:relative;isolation:isolate;background:#087b8a url('/assets/shoreline-hero.webp') center center/cover no-repeat;
+  min-height:clamp(42rem,calc(100svh - 6.25rem),56rem);overflow:hidden;color:#fff}
+.ocean-hero:before{content:"";position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(1,43,61,.9) 0%,rgba(1,65,78,.76) 38%,rgba(3,69,78,.26) 77%),linear-gradient(0deg,rgba(0,39,54,.3),transparent 55%);pointer-events:none}
 .ocean-hero .home-hero__copy{position:relative;z-index:2;padding-top:5rem;padding-bottom:3rem}
 .ocean-hero .home-hero__copy-inner{width:min(100%,690px)}
 .ocean-hero h1{font-size:clamp(4.1rem,6.7vw,7.9rem);max-width:9.4ch;letter-spacing:-.07em;text-wrap:balance;text-shadow:0 2px 16px rgba(5,79,103,.11)}
 .ocean-hero h1 em{color:#fff3bd;font-family:Georgia,serif;letter-spacing:-.065em}
 .ocean-hero .hero-lede{color:#eafdfb;max-width:34rem;font-size:clamp(1.05rem,1.35vw,1.29rem)}
-.ocean-hero .home-hero__visual{min-height:44rem;overflow:visible}
+.ocean-hero .home-hero__visual{z-index:1;min-height:44rem;overflow:visible}
 .ocean-hero .home-hero__visual:before{display:none}
 .ocean-hero .home-hero__visual img{position:absolute;inset:auto;width:min(115%,860px);height:auto;max-height:90%;object-fit:contain;right:-5%;top:3%;transform:rotate(-7deg);filter:drop-shadow(0 32px 45px rgba(1,47,66,.25));animation:shell-float 8s ease-in-out infinite alternate}
-.hero-orbit{position:absolute;width:85%;aspect-ratio:1;top:8%;left:6%;border:1px solid rgba(255,255,255,.52);border-radius:50%;box-shadow:0 0 0 4rem rgba(255,255,255,.035),0 0 0 8rem rgba(255,255,255,.025);background:radial-gradient(circle at 44% 43%,rgba(255,255,255,.26),transparent 66%)}
-.hero-float{position:absolute;z-index:3;left:-4%;bottom:11%;display:flex;flex-direction:column;gap:.25rem;min-width:15rem;padding:1.2rem 1.4rem;border:1px solid rgba(255,255,255,.56);border-radius:1.1rem;background:rgba(3,72,93,.26);backdrop-filter:blur(14px);box-shadow:0 15px 30px rgba(0,60,80,.12)}
-.hero-float span{font-size:.75rem;letter-spacing:.16em;font-weight:800;color:#d7faf4}.hero-float strong{font-size:1rem;line-height:1.35}
-.ocean-hero .hero-caption-line{border-color:rgba(255,255,255,.38);color:#e1f8f5;margin-top:4rem}
 @keyframes shell-float{from{transform:translateY(0) rotate(-7deg)}to{transform:translateY(-15px) rotate(-5deg)}}
-.chapter-bar{background:#dff8f1;border-color:#ace6df;color:#075269}.chapter-bar__inner{min-height:4.2rem}.chapter-bar span+span:before{color:#4cb7b5}
-/* Product concepts */
+/* Products */
 .pathways{background:linear-gradient(180deg,#f8fffb 0%,#eaf9f5 100%);scroll-margin-top:2rem}
 .pathways .section-heading{align-items:end}
 .pathways .section-heading h2{font-size:clamp(3.2rem,5.3vw,6.2rem)}
@@ -64,13 +56,18 @@ h1,h2,h3{letter-spacing:-.057em}
 .pathway-card h3{font-size:clamp(2rem,2.7vw,3rem);line-height:1.05;margin-bottom:.65rem}
 .pathway-card p{opacity:.88;min-height:3.2rem;max-width:21rem;margin-bottom:1.4rem}
 .pathway-card__action{border-color:rgba(9,87,105,.32);font-size:.875rem}
-.concept-note{margin:1.5rem 0 0;color:#527987;font-size:.875rem}
-.material-intro{background:#fffefa}.material-intro .muted{color:#21a3b0}.vertical-rule{background:#0fb0b9}
+.material-intro{background:#fffefa}.material-intro .muted{color:#21a3b0}.material-intro__inner{max-width:1100px}
 .intro-columns{color:#496e79}
 .image-story__panel{background:radial-gradient(circle at 100% 15%,rgba(72,224,219,.56),transparent 55%),linear-gradient(145deg,#06576e,#0a9baa);color:#fff}
-.image-story__panel p:not(.eyebrow){color:#e2f7f4}.image-story__serial{color:#c0e9e2}
-.status-section{background:radial-gradient(circle at 20% 20%,rgba(16,158,181,.55),transparent 45%),linear-gradient(125deg,#064b6c,#052d4b);color:#fff}
-.status-list{border-color:#6ca7b5}.status-list>div{border-color:#6ca7b5}.status-list span{color:#ffe09c}
+.image-story__panel p:not(.eyebrow){color:#e2f7f4}
+.story-preview{background:radial-gradient(circle at 0 0,rgba(27,161,180,.4),transparent 45%),linear-gradient(125deg,#064b6c,#052d4b);color:#fff}
+.story-preview__grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(3rem,8vw,8rem);align-items:center}
+.story-preview__copy h2{margin-bottom:1.7rem}.story-preview__copy>p:not(.eyebrow){color:#d7edef;font-size:1.12rem;max-width:31rem;margin-bottom:2.1rem}
+.story-preview__media{display:grid;grid-template-columns:1fr .78fr;gap:1rem;align-items:stretch;min-height:30rem}
+.story-preview__photo{position:relative;grid-row:span 2;border-radius:1.3rem;background:linear-gradient(0deg,rgba(2,44,59,.6),transparent 55%),url('/assets/shoreline-hero.webp') 69% center/cover no-repeat;overflow:hidden;box-shadow:0 20px 45px rgba(0,32,49,.2)}
+.story-preview__photo span{position:absolute;left:1.5rem;right:1rem;bottom:1.5rem;font-size:.77rem;font-weight:800;letter-spacing:.13em;line-height:1.4}
+.story-preview__support{grid-column:2;grid-row:2;align-self:end;padding:1.6rem;border:1px solid rgba(255,255,255,.18);border-radius:1.3rem;background:#0b8394;box-shadow:0 15px 35px rgba(0,32,49,.15)}
+.story-preview__support span{color:#fff0bc;font-size:.75rem;letter-spacing:.14em;font-weight:800}.story-preview__support p{font-size:1.1rem;line-height:1.45;margin:1.2rem 0 0}
 .next-step{background:radial-gradient(circle at 2% 4%,#fef4c9,transparent 52%),linear-gradient(120deg,#d3faf2,#a8e8eb 85%)}
 /* Bright route heroes */
 .page-hero{background:#d8f4f3}
@@ -126,7 +123,10 @@ h1,h2,h3{letter-spacing:-.057em}
 #inquiry-form input,#inquiry-form select,#inquiry-form textarea{border-radius:.75rem;border-color:#a9d5d6;background:#fff}
 #inquiry-form input:focus,#inquiry-form select:focus,#inquiry-form textarea:focus{border-color:#00a9b8;box-shadow:0 0 0 3px rgba(0,169,184,.15)}
 /* Footer */
-.site-footer{background:radial-gradient(circle at 0 0,rgba(17,151,174,.43),transparent 43%),linear-gradient(125deg,#052f49,#05445b);color:#fff}
+.site-footer{background:linear-gradient(110deg,rgba(2,35,53,.96),rgba(3,60,75,.9)),url('/assets/shoreline-hero.webp') center 55%/cover no-repeat;color:#fff}
+.footer-logo{display:grid;place-items:center;width:12rem;height:8.5rem;background:rgba(255,254,247,.95);border-radius:1rem;margin-bottom:2.3rem;box-shadow:0 16px 35px rgba(0,25,40,.16)}
+.footer-logo img{width:10.8rem;height:7.2rem;object-fit:contain}
+.footer-links a{overflow-wrap:anywhere}
 .footer-links h3{color:#ffe6aa}.footer-links a,.footer-links span{color:#c5e4e3}.footer-bottom{border-color:#5c9ba8;color:#b7d5d4}.footer-bottom a{color:#fff0bc}
 @media(max-width:1120px){
  .ocean-hero h1{font-size:clamp(3.8rem,6.3vw,6.5rem)}
@@ -136,7 +136,8 @@ h1,h2,h3{letter-spacing:-.057em}
 @media(max-width:1000px){
  .primary-nav{background:#fffefa}
  .primary-nav .nav-contact{margin-top:1.1rem}
- .ocean-hero .home-hero__visual{min-height:30rem;overflow:hidden}.ocean-hero .home-hero__visual img{height:110%;width:auto;max-width:none;right:8%;top:-7%}.hero-orbit{width:70%;top:0;left:20%}.hero-float{left:7%;bottom:8%}
+ .ocean-hero .home-hero__visual{min-height:30rem;overflow:hidden}.ocean-hero .home-hero__visual img{height:110%;width:auto;max-width:none;right:8%;top:-7%}
+ .story-preview__grid{grid-template-columns:1fr 1fr;gap:3rem}.story-preview__media{grid-template-columns:1fr;min-height:30rem}.story-preview__photo{grid-row:auto;min-height:17rem}.story-preview__support{grid-column:1;grid-row:auto}
  .pathway-grid{grid-template-columns:repeat(3,1fr)}.pathway-card--feature{grid-row:auto;min-height:39rem}.pathway-card{padding:1rem}.pathway-card__visual{height:17rem}.pathway-card h3{font-size:2rem}
  .application-row__grid{grid-template-columns:.6fr 1fr}.application-row__visual{grid-column:2;min-height:18rem}.application-row__foot{grid-column:2}
  .process-hero__grid{grid-template-columns:1fr 1fr;gap:2rem}.process-hero__visual{height:27rem}
@@ -148,9 +149,9 @@ h1,h2,h3{letter-spacing:-.057em}
  .applications-hero__shell{width:70%;right:-25%;top:15%;opacity:.22}
 }
 @media(max-width:640px){
- .ocean-hero{min-height:0}.ocean-hero .home-hero__copy{padding:4.2rem 1.125rem 2rem}.ocean-hero h1{font-size:clamp(3.3rem,12.5vw,5.1rem)}.ocean-hero .hero-lede{font-size:1.02rem}.ocean-hero .home-hero__visual{min-height:23rem}.ocean-hero .home-hero__visual img{height:110%;right:-4%;top:-6%}.hero-orbit{width:76%;top:4%;left:17%;box-shadow:0 0 0 2rem rgba(255,255,255,.035)}.hero-float{bottom:5%;left:5%;min-width:0;width:11rem;padding:.7rem .9rem}.hero-float strong{font-size:.83rem}.hero-float span{font-size:.75rem}
- .ocean-hero .hero-caption-line{margin-top:2.7rem}.chapter-bar__inner{min-height:3.6rem}.chapter-bar span{font-size:.75rem}.chapter-bar span:nth-child(n+4){display:none}
- .pathways .section-heading h2{font-size:clamp(2.7rem,9vw,4.3rem)}.pathway-card,.pathway-card--feature{min-height:35rem}.pathway-card__visual{height:19rem}.concept-note{font-size:.875rem}
+ .ocean-hero{min-height:0;background-position:64% center}.ocean-hero:before{background:linear-gradient(180deg,rgba(1,44,61,.82),rgba(1,52,67,.61) 58%,rgba(1,52,67,.32))}.ocean-hero .home-hero__copy{padding:4.2rem 1.125rem 2rem}.ocean-hero h1{font-size:clamp(3.3rem,12.5vw,5.1rem)}.ocean-hero .hero-lede{font-size:1.02rem}.ocean-hero .home-hero__visual{min-height:23rem}.ocean-hero .home-hero__visual img{height:110%;right:-4%;top:-6%}
+ .pathways .section-heading h2{font-size:clamp(2.7rem,9vw,4.3rem)}.pathway-card,.pathway-card--feature{min-height:35rem}.pathway-card__visual{height:19rem}
+ .story-preview__grid{grid-template-columns:1fr;gap:2.7rem}.story-preview__media{grid-template-columns:1fr;min-height:0}.story-preview__photo{grid-row:auto;min-height:17rem}.story-preview__support{grid-column:1;grid-row:auto;padding:1.3rem}.story-preview__support p{font-size:1rem}
  .product-hero{padding:4rem 0 0}.product-hero h1{font-size:clamp(3.15rem,10.5vw,4.7rem)}.product-hero__visual{height:25rem;margin:0 -1.125rem}.product-hero__visual img{height:100%}.product-hero__halo{width:70%;left:15%;top:11%}.product-hero__stamp{right:1rem;bottom:.3rem}
  .application-row__grid{display:block}.application-row__visual{margin:1.8rem 0 0;min-height:19rem}.application-row__foot{margin-top:1rem;text-align:left}.application-row__visual img{height:17rem}.applications-hero{min-height:0}.applications-hero__shell{width:90%;right:-35%;top:25%}
  .process-hero__visual{height:20rem}.process-hero h1{font-size:clamp(3.2rem,10.8vw,5rem)}
